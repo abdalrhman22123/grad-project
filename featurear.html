@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أوتوفيجن - تقنية السيارات بالواقع المعزز</title>
+    <link rel="stylesheet" href="feature.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header id="header">
+        <nav class="nav-container">
+            <!-- Logo -->
+            <div class="logo-wrapper">
+                <div class="logo-svg">
+                    <!-- SVG remains the same -->
+                </div>
+                <span class="logo-text">أوتوفيجن</span>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <div class="nav-links desktop-nav">
+                <a href="#home" class="nav-link">الرئيسية</a>
+                <a href="#carscreen" class="nav-link">شاشة السيارة</a>
+                <a href="app.html" class="nav-link">التطبيق</a>
+                <a class="feat" href="#features" class="nav-link">الميزات</a>
+                <a href="#career" class="nav-link">الوظائف</a>
+                <a href="#faq" class="nav-link">الأسئلة الشائعة</a>
+            </div>
+
+            <!-- Try App Button -->
+            <div class="desktop-nav">
+                <button class="btn-try-app">جرب التطبيق</button>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="قائمة التنقل">
+                <span class="hamburger-line line1"></span>
+                <span class="hamburger-line line2"></span>
+                <span class="hamburger-line line3"></span>
+            </button>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu">
+            <div class="mobile-menu-content">
+                <a href="#home" class="mobile-nav-link">الرئيسية</a>
+                <a href="#carscreen" class="mobile-nav-link">شاشة السيارة</a>
+                <a href="#application" class="mobile-nav-link">التطبيق</a>
+                <a href="#faq" class="mobile-nav-link">الأسئلة الشائعة</a>
+                <button class="btn-try-app">جرب التطبيق</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-bg">
+            <img src="image 17.svg" alt="سيارة فاخرة" class="hero-image">
+        </div>
+        
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">الواقع المعزز لتقليل الحوادث، توفير الوقت، وجعل السفر حول المدينة ممتعًا</h1>
+                <p class="hero-description">
+                    جرب مستقبل القيادة مع نظام الواقع المعزز المتطور الذي يحول الزجاج الأمامي إلى شاشة معلومات ذكية.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn-primary">ابدأ الآن</button>
+                    <button class="btn-secondary">تعرف على المزيد</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Revolutionary Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">ميزات ثورية</h2>
+                <p class="section-description">
+                    اكتشف كيف تعزز تقنية الواقع المعزز كل جانب من جوانب تجربة القيادة الخاصة بك
+                </p>
+            </div>
+
+            <!-- Features Grid -->
+            <div class="features-grid">
+                <!-- Feature 1 - AR Navigation -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <!-- SVG remains the same -->
+                    </div>
+                    <h3 class="feature-title">الملاحة بالواقع المعزز</h3>
+                    <p class="feature-description">
+                        أسهم توجيهية ومؤشرات دوران في الوقت الفعلي مرسومة مباشرة على رؤيتك للطريق لتوجيه بديهي.
+                    </p>
+                </div>
+
+                <!-- Feature 2 - Hazard Detection -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <!-- SVG remains the same -->
+                    </div>
+                    <h3 class="feature-title">كشف المخاطر</h3>
+                    <p class="feature-description">
+                        اكتشاف فوري وإبراز للمخاطر المحتملة على الطريق باستخدام الذكاء الاصطناعي للتعرف على الأجسام والتنبيهات.
+                    </p>
+                </div>
+
+                <!-- Feature 3 - Parking Assist -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <!-- SVG remains the same -->
+                    </div>
+                    <h3 class="feature-title">مساعد الركن</h3>
+                    <p class="feature-description">
+                        خطوط ركن افتراضية وتوجيه مكاني لجعل الركن المتوازي والمساحات الضيقة أمرًا سهلاً.
+                    </p>
+                </div>
+
+                <!-- Feature 4 - Speed & Performance -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <!-- SVG remains the same -->
+                    </div>
+                    <h3 class="feature-title">السرعة والأداء</h3>
+                    <p class="feature-description">
+                        عرض السرعة ودورات المحرك والمقاييس الأدائية في الوقت الفعلي في خط رؤيتك المباشر دون تشتيت.
+                    </p>
+                </div>
+
+                <!-- Feature 5 - POI Discovery -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <!-- SVG remains the same -->
+                    </div>
+                    <h3 class="feature-title">اكتشاف النقاط المهمة</h3>
+                    <p class="feature-description">
+                        اكتشف النقاط السياحية القريبة بعلامات الموقع العائمة في عرض الواقع المعزز أثناء القيادة.
+                    </p>
+                </div>
+
+                <!-- Feature 6 - Lane Guidance -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <!-- SVG remains the same -->
+                    </div>
+                    <h3 class="feature-title">توجيه المسار</h3>
+                    <p class="feature-description">
+                        مساعدة بصرية للحفاظ على المسار مع طبقات الواقع المعزز التي تظهر المسار الأمثل وحboundaries المسار.
+                    </p>
+                </div>
+
+                <!-- Feature 7 - Smart Integration -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <!-- SVG remains the same -->
+                    </div>
+                    <h3 class="feature-title">التكامل الذكي</h3>
+                    <p class="feature-description">
+                        ربط سلس مع هاتفك الذكي للمكالمات والرسائل وتكامل التطبيقات في واجهة الواقع المعزز.
+                    </p>
+                </div>
+
+                <!-- Feature 8 - Instant Alerts -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <!-- SVG remains the same -->
+                    </div>
+                    <h3 class="feature-title">تنبيهات فورية</h3>
+                    <p class="feature-description">
+                        احصل على إشعارات فورية حول حالة المرور، حدود السرعة، وتغييرات الطريق في الوقت الفعلي.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Immersive AR Navigation Section -->
+    <section id="carscreen" class="ar-navigation-section">
+        <div class="container">
+            <div class="two-column-layout">
+                <!-- Content -->
+                <div class="content-column">
+                    <div class="badge">
+                        <!-- SVG remains the same -->
+                        <span class="badge-text">معالجة في الوقت الفعلي</span>
+                    </div>
+
+                    <h3 class="content-title">الملاحة بالواقع المعزز الغامر</h3>
+                    <p class="content-description">
+                        يرسم نظام الواقع المعزز المتقدم تعليمات الملاحة مباشرة على رؤيتك للطريق. لا تفوت أي منعطف مع التوجيه البصري البديهي الذي يتكيف مع ظروف القيادة في الوقت الفعلي.
+                    </p>
+
+                    <ul class="feature-list">
+                        <li class="feature-list-item">
+                            <div class="bullet-point"></div>
+                            <span>تعليمات AR خطوة بخطوة</span>
+                        </li>
+                        <li class="feature-list-item">
+                            <div class="bullet-point"></div>
+                            <span>التعرف على المعالم ثلاثية الأبعاد</span>
+                        </li>
+                        <li class="feature-list-item">
+                            <div class="bullet-point"></div>
+                            <span>تحسين المسار الديناميكي</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Image -->
+                <div class="image-column">
+                    <div class="image-wrapper">
+                        <img src="ImageWithFallback.svg" alt="عرض الملاحة بالواقع المعزز" class="content-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Intelligent Safety Systems Section -->
+    <section id="application" class="safety-section">
+        <div class="container">
+            <div class="two-column-layout">
+                <!-- Image -->
+                <div class="image-column">
+                    <div class="image-wrapper">
+                        <img src="ImageWithFallback2.svg" alt="ميزات الأمان" class="content-image">
+                    </div>
+                </div>
+
+                <!-- Content -->
+                <div class="content-column">
+                    <div class="badge">
+                        <!-- SVG remains the same -->
+                        <span class="badge-text">الأمان بالذكاء الاصطناعي</span>
+                    </div>
+
+                    <h3 class="content-title">أنظمة الأمان الذكية</h3>
+                    <p class="content-description">
+                        رؤيتنا تتعرف على المخاطر المحتملة وتوفر تحذيرات في الوقت الفعلي. كن خطوة إلى الأمام مع تقنية الأمان التنبؤية التي تساعد في منع الحوادث قبل حدوثها.
+                    </p>
+
+                    <ul class="feature-list">
+                        <li class="feature-list-item">
+                            <div class="bullet-point"></div>
+                            <span>نظام تحذير التصادم</span>
+                        </li>
+                        <li class="feature-list-item">
+                            <div class="bullet-point"></div>
+                            <span>مراقبة النقطة العمياء</span>
+                        </li>
+                        <li class="feature-list-item">
+                            <div class="bullet-point"></div>
+                            <span>كشف المشاة</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">هل أنت جاهز لتحويل قيادتك؟</h2>
+                <p class="cta-description">
+                    جرب مستقبل تقنية السيارات. نظام مدعوم بالواقع المعزز يحول تجربة القيادة الخاصة بك.
+                </p>
+                
+                <div class="cta-buttons">
+                    <button class="btn-primary">ابدأ الآن</button>
+                    <button class="btn-secondary">شاهد العرض التوضيحي</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">50M+</div>
+                    <div class="stat-label">مستخدم نشط</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">99.9%</div>
+                    <div class="stat-label">معدل الدقة</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">4.9/5</div>
+                    <div class="stat-label">تقييم المستخدمين</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="faq" class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Logo & Description -->
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <div class="logo-svg">
+                            <!-- SVG remains the same -->
+                        </div>
+                        <span class="logo-text">أوتوفيجن</span>
+                    </div>
+                    <p class="footer-description">
+                        تحويل مستقبل القيادة بتقنية الواقع المعزز.
+                    </p>
+                </div>
+
+                <!-- Product Links -->
+                <div class="footer-column">
+                    <h4 class="footer-heading">المنتج</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">الميزات</a></li>
+                        <li><a href="#" class="footer-link">التسعير</a></li>
+                        <li><a href="#" class="footer-link">التنزيلات</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company Links -->
+                <div class="footer-column">
+                    <h4 class="footer-heading">الشركة</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">حول</a></li>
+                        <li><a href="#" class="footer-link">الوظائف</a></li>
+                        <li><a href="#" class="footer-link">الصحافة</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal Links -->
+                <div class="footer-column">
+                    <h4 class="footer-heading">القانوني</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">الخصوصية</a></li>
+                        <li><a href="#" class="footer-link">الشروط</a></li>
+                        <li><a href="#" class="footer-link">الترخيص</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2025 أوتوفيجن. جميع الحقوق محفوظة.</p>
+                
+                <div class="social-links">
+                    <!-- Social SVG icons remain the same -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
