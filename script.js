@@ -257,3 +257,8 @@ revealSections.forEach(section => {
 
 // Initialize
 console.log('Otovision landing page loaded successfully!');
+import LoginPage from "./components/LoginPage";
+
+export default function App() {
+  return <LoginPage />;
+}

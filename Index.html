@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Section - Image -->
+        <div class="image-section">
+            <img src="image 22.svg" alt="Car dashboard" class="background-image">
+            <div class="gradient-overlay"></div>
+        </div>
+
+        <!-- Right Section - Login Form -->
+        <div class="form-section">
+            <div class="form-wrapper">
+                <h1 class="title">LOG IN</h1>
+
+                <form id="loginForm" class="login-form">
+                    <!-- Email Field -->
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            class="form-input" 
+                            required
+                        >
+                    </div>
+
+                    <!-- Password Field -->
+                    <div class="form-group">
+                        <label for="password" class="form-label">Password</label>
+                        <input 
+                            type="password" 
+                            id="password" 
+                            class="form-input" 
+                            required
+                        >
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="button-wrapper">
+                        <a href="home.html" target="_blank" rel="noopener noreferrer"><button type="submit" class="submit-button">Submit</button></a>
+                    </div>
+                </form>
+
+                <!-- Sign Up Link -->
+                <div class="signup-section">
+                    <p class="signup-text">Don't have account?</p>
+                    <button class="signup-link">Sign in</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

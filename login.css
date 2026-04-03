@@ -1,0 +1,213 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Container */
+.container {
+    min-height: 100vh;
+    background-color: #0e0e0e;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Image Section */
+.image-section {
+    position: relative;
+    overflow: hidden;
+    height: 16rem; /* 256px */
+}
+
+.background-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.gradient-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, transparent, rgba(14, 14, 14, 0.5));
+}
+
+/* Form Section */
+.form-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 1.5rem;
+}
+
+.form-wrapper {
+    width: 100%;
+    max-width: 28rem; /* 448px */
+}
+
+.title {
+    color: #d7d7d7;
+    font-size: 1.875rem; /* 30px */
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+/* Form Styles */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    display: block;
+    color: #d7d7d7;
+    font-size: 0.875rem; /* 14px */
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.form-input {
+    width: 100%;
+    height: 3rem; /* 48px */
+    background-color: transparent;
+    border: 1px solid #d7d7d7;
+    border-radius: 3px;
+    padding: 0 1rem;
+    color: #d7d7d7;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: white;
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+.submit-button {
+    background-color: #d7d7d7;
+    color: black;
+    font-weight: bold;
+    font-size: 1.125rem; /* 18px */
+    padding: 0.75rem 3rem;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: white;
+}
+
+/* Sign Up Section */
+.signup-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.signup-text {
+    color: white;
+    font-size: 0.875rem; /* 14px */
+    font-weight: 600;
+}
+
+.signup-link {
+    color: white;
+    font-size: 1.125rem; /* 18px */
+    font-weight: 600;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: text-decoration 0.3s ease;
+}
+
+.signup-link:hover {
+    text-decoration: underline;
+}
+
+/* Tablet and Desktop Styles */
+@media (min-width: 1024px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .image-section {
+        width: 50%;
+        height: 100vh;
+    }
+
+    .gradient-overlay {
+        background: linear-gradient(to right, transparent, rgba(14, 14, 14, 0.5), #0e0e0e);
+    }
+
+    .form-section {
+        padding: 3rem;
+    }
+
+    .title {
+        font-size: 2.25rem; /* 36px */
+        margin-bottom: 4rem;
+    }
+
+    .form-label {
+        font-size: 1rem; /* 16px */
+    }
+
+    .submit-button {
+        font-size: 1.25rem; /* 20px */
+    }
+
+    .signup-text {
+        font-size: 1rem; /* 16px */
+    }
+
+    .signup-link {
+        font-size: 1.25rem; /* 20px */
+    }
+
+    .signup-section {
+        margin-top: 4rem;
+    }
+}
+
+/* Medium screens */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .image-section {
+        height: 20rem; /* 320px */
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+}
