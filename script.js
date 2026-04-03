@@ -262,3 +262,51 @@ import LoginPage from "./components/LoginPage";
 export default function App() {
   return <LoginPage />;
 }
+document.addEventListener("DOMContentLoaded", () => {
+    // --- SETUP DUMMY DATA FOR TESTING ---
+    // In a real application, this data would be saved when the user uses the "Sign up" page.
+    if (!localStorage.getItem("registeredUsers")) {
+        const dummyUser = {
+            email: "test@example.com",
+            password: "password123"
+        };
+        // Save to local storage as a JSON string
+        localStorage.setItem("registeredUsers", JSON.stringify(dummyUser));
+    }
+    // ------------------------------------
+
+    const loginForm = document.getElementById("loginForm");
+    const emailInput = document.getElementById("email");
+    const passwordInput = document.getElementById("password");
+    const errorMessage = document.getElementById("error-message");
+
+    // Listen for the form submission
+    loginForm.addEventListener("submit", function(event) {
+        // Prevent the default form submission (which reloads the page)
+        event.preventDefault(); 
+
+        const enteredEmail = emailInput.value.trim();
+        const enteredPassword = passwordInput.value.trim();
+
+        // Retrieve the stored user data from Local Storage
+        const storedUserData = localStorage.getItem("registeredUsers");
+
+        if (storedUserData) {
+            const parsedUser = JSON.parse(storedUserData);
+
+            // Validation Logic
+            if (enteredEmail === parsedUser.email && enteredPassword === parsedUser.password) {
+                // Success: Hide error and redirect
+                errorMessage.style.display = "none";
+                window.location.href = "Home.html";
+            } else {
+                // Fail: Show error message
+                errorMessage.textContent = "Invalid email or password. Please try again.";
+                errorMessage.style.display = "block";
+            }
+        } else {
+             errorMessage.textContent = "No accounts found. Please sign up first.";
+             errorMessage.style.display = "block";
+        }
+    });
+});
