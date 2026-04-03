@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTOVISION - AR Automotive Technology</title>
+    <link rel="stylesheet" href="feature.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header id="header">
+        <nav class="nav-container">
+            <!-- Logo -->
+            <div class="logo-wrapper">
+                <div class="logo-svg">
+                    <svg fill="none" preserveAspectRatio="xMidYMid meet" viewBox="0 0 76 42.0455">
+                        <path d="M18.5907 15.3575C19.3642 14.0433 23.6038 13.4928 23.6038 13.4928C28.0508 5.2487 35.4509 4.34738 37.9974 4.29341C40.5438 4.35008 47.9466 5.2487 52.3909 13.4928C52.3909 13.4928 56.6305 14.046 57.404 15.3575C58.1616 16.6447 54.9772 1.07673 38.1568 0.0215895V1.03191e-06C38.1037 0.00269959 38.0505 0.00809671 37.9974 0.0107953C37.9442 0.00809671 37.891 0.00269959 37.8379 1.03191e-06V0.0215895C21.0175 1.07673 17.8358 16.6447 18.5907 15.3575Z" fill="#A8ABB2" />
+                        <path d="M76 14.3078C73.3207 15.398 68.1347 15.5599 68.1347 15.5599C71.1596 14.5021 70.8858 12.9423 70.8858 12.9423C70.8858 12.9423 63.9801 15.3575 63.7462 14.7233C63.515 14.0892 65.8833 13.2445 65.8833 13.2445C65.1258 12.6643 63.9908 12.6023 63.1003 12.7831C60.6921 13.2715 59.3923 15.6112 56.8538 15.8621C55.7029 15.9755 54.7725 15.595 53.6774 15.3656C53.5099 15.3305 53.3451 15.3116 53.1803 15.3008C51.9762 15.1632 50.7189 15.3413 49.4829 15.595C46.3942 16.2264 39.4354 21.5129 38.0744 26.3865C37.1733 21.2943 29.5606 16.7257 26.5144 15.595C24.9515 15.0148 23.237 14.9716 21.6847 15.5167C20.8474 15.7299 20.0659 15.9539 19.1462 15.8621C16.6077 15.6112 15.3053 13.2715 12.8997 12.7831C12.0092 12.6023 10.8742 12.667 10.1167 13.2445C10.1167 13.2445 12.485 14.0892 12.2538 14.7233C12.0225 15.3575 5.11416 12.9423 5.11416 12.9423C5.11416 12.9423 4.84037 14.4994 7.86528 15.5599C7.86528 15.5599 2.67935 15.3953 0 14.3078C0 14.3078 0.523643 18.5742 13.1628 20.8464C13.1628 20.8464 11.6451 21.1567 9.95985 21.0056C9.95985 21.0056 13.0698 23.7446 18.0511 22.4142C18.6119 27.3499 20.2307 32.148 23.6968 35.8018C26.2592 38.5031 29.5951 40.33 33.1463 41.288C34.6694 41.6982 36.3998 42.1056 37.9973 42.0382C39.5949 42.1056 41.3253 41.6982 42.8483 41.288C46.4022 40.3273 49.7354 38.5004 52.2978 35.8018C55.764 32.148 57.3828 27.3499 57.9436 22.4142C62.9249 23.7446 66.0348 21.0056 66.0348 21.0056C64.3496 21.1567 62.8318 20.8464 62.8318 20.8464C75.4737 18.5742 76 14.3078 76 14.3078ZM38.1409 37.8041C38.1409 37.8041 38.1143 37.8041 38.0691 37.8041C38.0665 37.8041 38.0611 37.8041 38.0585 37.8041C38.0425 37.8041 38.0213 37.8041 38 37.8041C37.9787 37.8041 37.9575 37.8041 37.9415 37.8041C37.9389 37.8041 37.9335 37.8041 37.9282 37.8041C37.883 37.8041 37.8565 37.8041 37.8565 37.8041C24.6032 37.2239 22.3253 26.0816 21.9345 22.193C21.8628 21.4913 22.4449 20.8869 23.136 20.957C26.23 21.2593 29.1087 22.2199 31.6233 24.1656C33.2819 25.4474 34.284 27.3391 34.7545 29.3711C35.2276 31.4139 34.6375 33.7968 35.5865 35.7235C35.9931 36.5493 36.9102 36.9136 37.8379 36.973V36.9838C37.891 36.9838 37.9442 36.9811 37.9973 36.9784C38.0505 36.9784 38.1037 36.9838 38.1568 36.9838V36.9703C39.0818 36.9109 40.0015 36.5466 40.4082 35.7208C41.3572 33.7968 40.7671 31.4112 41.2402 29.3684C41.7107 27.3364 42.7128 25.442 44.3714 24.1629C46.8886 22.2199 49.7647 21.2593 52.8587 20.9543C53.5525 20.8869 54.1319 21.4886 54.0602 22.1903C53.6721 26.0816 51.3941 37.2212 38.1409 37.8041Z" fill="#A8ABB2" />
+                    </svg>
+                </div>
+                <span class="logo-text">OTOVISION</span>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <div class="nav-links desktop-nav">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#carscreen" class="nav-link">Carscreen</a>
+                <a href="#application" class="nav-link">App</a>
+                <a class="feat" href="#features" class="nav-link">Features</a>
+                <a href="#career" class="nav-link">Career</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+
+            </div>
+
+            <!-- Try App Button -->
+            <div class="desktop-nav">
+                <button class="btn-try-app">Try App</button>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle menu">
+                <span class="hamburger-line line1"></span>
+                <span class="hamburger-line line2"></span>
+                <span class="hamburger-line line3"></span>
+            </button>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu">
+            <div class="mobile-menu-content">
+                <a href="#home" class="mobile-nav-link">Home</a>
+                <a href="#carscreen" class="mobile-nav-link">Carscreen</a>
+                <a href="#application" class="mobile-nav-link">App</a>
+                <a href="#faq" class="mobile-nav-link">FAQ</a>
+                <button class="btn-try-app">Try App</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-bg">
+            <img src="image 17.svg" alt="Luxury car" class="hero-image">
+        </div>
+        
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">AR to reduce accidents, save time make interesting traveling around the city</h1>
+                <p class="hero-description">
+                    Experience the future of driving with our cutting-edge augmented reality system that transforms your windshield into an intelligent heads-up display.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn-primary">Get Started</button>
+                    <button class="btn-secondary">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Revolutionary Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Revolutionary Features</h2>
+                <p class="section-description">
+                    Discover how our AR technology enhances every aspect of your driving experience
+                </p>
+            </div>
+
+            <!-- Features Grid -->
+            <div class="features-grid">
+                <!-- Feature 1 - AR Navigation -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg fill="none" viewBox="0 0 28 28">
+                            <path d="M3.5 12.8333L25.6667 2.33333L15.1667 24.5L12.8333 15.1667L3.5 12.8333Z" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.33333" />
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">AR Navigation</h3>
+                    <p class="feature-description">
+                        Real-time directional arrows and turn indicators projected directly onto your windshield view for intuitive navigation.
+                    </p>
+                </div>
+
+                <!-- Feature 2 - Hazard Detection -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg fill="none" viewBox="0 0 28 28">
+                            <path d="M25.3517 21L16.0183 4.66667C15.8148 4.30757 15.5197 4.00889 15.1631 3.80108C14.8065 3.59328 14.4011 3.48379 13.9883 3.48379C13.5756 3.48379 13.1702 3.59328 12.8136 3.80108C12.457 4.00889 12.1618 4.30757 11.9583 4.66667L2.625 21C2.4193 21.3563 2.31143 21.7606 2.31234 22.1719C2.31326 22.5833 2.42291 22.9871 2.63019 23.3425C2.83747 23.6978 3.13501 23.992 3.49264 24.1953C3.85028 24.3986 4.25531 24.5037 4.66667 24.5H23.3333C23.7427 24.4996 24.1448 24.3915 24.4992 24.1865C24.8535 23.9815 25.1478 23.6869 25.3523 23.3323C25.5568 22.9777 25.6644 22.5755 25.6643 22.1661C25.6642 21.7567 25.5564 21.3545 25.3517 21Z" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.33333" />
+                            <path d="M14 10.5V15.1667" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.33333" />
+                            <path d="M14 19.8333H14.0117" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.33333" />
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Hazard Detection</h3>
+                    <p class="feature-description">
+                        Instantly identify and highlight potential dangers on the road with AI-powered object recognition and alerts.
+                    </p>
+                </div>
+
+                <!-- Feature 3 - Parking Assist -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg fill="none" viewBox="0 0 28 28">
+                            <path d="M22.1667 3.5H5.83333C4.54467 3.5 3.5 4.54467 3.5 5.83333V22.1667C3.5 23.4553 4.54467 24.5 5.83333 24.5H22.1667C23.4553 24.5 24.5 23.4553 24.5 22.1667V5.83333C24.5 4.54467 23.4553 3.5 22.1667 3.5Z" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.33333" />
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Parking Assist</h3>
+                    <p class="feature-description">
+                        Virtual parking lines and spatial guidance overlay to make parallel parking and tight spaces effortless.
+                    </p>
+                </div>
+
+                <!-- Feature 4 - Speed & Performance -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg fill="none" viewBox="0 0 28 28">
+                            <path d="M14 16.3333L18.6667 11.6667" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.33333" />
+                            <path d="M3.89732 22.1665C2.87324 20.393 2.33406 18.3811 2.33398 16.3331C2.33391 14.2851 2.87293 12.2732 3.89687 10.4996C4.92082 8.72598 6.3936 7.25314 8.16719 6.22913C9.94078 5.20511 11.9527 4.66602 14.0007 4.66602C16.0486 4.66602 18.0605 5.20511 19.8341 6.22913C21.6077 7.25314 23.0805 8.72598 24.1044 10.4996C25.1284 12.2732 25.6674 14.2851 25.6673 16.3331C25.6672 18.3811 25.1281 20.393 24.104 22.1665" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.33333" />
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Speed & Performance</h3>
+                    <p class="feature-description">
+                        Display real-time speed, RPM, and performance metrics in your direct line of sight without distraction.
+                    </p>
+                </div>
+
+                <!-- Feature 5 - POI Discovery -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg fill="none" viewBox="0 0 28 28">
+                            <path d="M2.40495 14.4061C2.30772 14.1441 2.30772 13.856 2.40495 13.5941C3.35194 11.2979 4.95939 9.3346 7.02352 7.9531C9.08765 6.5716 11.5155 5.83411 13.9993 5.83411C16.4831 5.83411 18.9109 6.5716 20.9751 7.9531C23.0392 9.3346 24.6466 11.2979 25.5936 13.5941C25.6909 13.856 25.6909 14.1441 25.5936 14.4061C24.6466 16.7022 23.0392 18.6655 20.9751 20.047C18.9109 21.4285 16.4831 22.166 13.9993 22.166C11.5155 22.166 9.08765 21.4285 7.02352 20.047C4.95939 18.6655 3.35194 16.7022 2.40495 14.4061Z" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.33333" />
+                            <path d="M14 17.5C15.933 17.5 17.5 15.933 17.5 14C17.5 12.067 15.933 10.5 14 10.5C12.067 10.5 10.5 12.067 10.5 14C10.5 15.933 12.067 17.5 14 17.5Z" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.33333" />
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">POI Discovery</h3>
+                    <p class="feature-description">
+                        Discover nearby points of interest with location markers floating in your AR view as you drive.
+                    </p>
+                </div>
+
+                <!-- Feature 6 - Lane Guidance -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg fill="none" viewBox="0 0 28 28">
+                            <path d="M2.40495 14.4061C2.30772 14.1441 2.30772 13.856 2.40495 13.5941C3.35194 11.2979 4.95939 9.3346 7.02352 7.9531C9.08765 6.5716 11.5155 5.83411 13.9993 5.83411C16.4831 5.83411 18.9109 6.5716 20.9751 7.9531C23.0392 9.3346 24.6466 11.2979 25.5936 13.5941C25.6909 13.856 25.6909 14.1441 25.5936 14.4061C24.6466 16.7022 23.0392 18.6655 20.9751 20.047C18.9109 21.4285 16.4831 22.166 13.9993 22.166C11.5155 22.166 9.08765 21.4285 7.02352 20.047C4.95939 18.6655 3.35194 16.7022 2.40495 14.4061Z" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.33333" />
+                            <path d="M14 17.5C15.933 17.5 17.5 15.933 17.5 14C17.5 12.067 15.933 10.5 14 10.5C12.067 10.5 10.5 12.067 10.5 14C10.5 15.933 12.067 17.5 14 17.5Z" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.33333" />
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Lane Guidance</h3>
+                    <p class="feature-description">
+                        Visual lane-keeping assistance with AR overlays showing optimal driving path and lane boundaries.
+                    </p>
+                </div>
+
+                <!-- Feature 7 - Smart Integration -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg fill="none" viewBox="0 0 28 28">
+                            <path d="M19.834 2.33325H8.16732C6.87865 2.33325 5.83398 3.37792 5.83398 4.66659V23.3333C5.83398 24.6219 6.87865 25.6666 8.16732 25.6666H19.834C21.1226 25.6666 22.1673 24.6219 22.1673 23.3333V4.66659C22.1673 3.37792 21.1226 2.33325 19.834 2.33325Z" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.33333" />
+                            <path d="M14 21H14.0117" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.33333" />
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Smart Integration</h3>
+                    <p class="feature-description">
+                        Seamlessly connect with your smartphone for calls, messages, and app integration in AR interface.
+                    </p>
+                </div>
+
+                <!-- Feature 8 - Instant Alerts -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg fill="none" viewBox="0 0 28 28">
+                            <path d="M4.66667 16.3333C4.44589 16.3341 4.22944 16.2722 4.04245 16.1548C3.85546 16.0374 3.70561 15.8694 3.61031 15.6703C3.51501 15.4711 3.47818 15.249 3.50408 15.0298C3.52999 14.8105 3.61758 14.6031 3.75667 14.4317L15.3067 2.53167C15.3933 2.43166 15.5114 2.36408 15.6415 2.34002C15.7716 2.31596 15.906 2.33685 16.0227 2.39926C16.1394 2.46166 16.2313 2.56188 16.2836 2.68346C16.3358 2.80504 16.3451 2.94076 16.31 3.06833L14.07 10.0917C14.0039 10.2684 13.9818 10.4586 14.0054 10.6458C14.0289 10.8331 14.0976 11.0118 14.2054 11.1667C14.3133 11.3215 14.4571 11.4479 14.6245 11.535C14.7919 11.6221 14.978 11.6673 15.1667 11.6667H23.3333C23.5541 11.6659 23.7706 11.7278 23.9576 11.8452C24.1445 11.9626 24.2944 12.1306 24.3897 12.3297C24.485 12.5289 24.5218 12.751 24.4959 12.9702C24.47 13.1895 24.3824 13.3969 24.2433 13.5683L12.6933 25.4683C12.6067 25.5683 12.4886 25.6359 12.3585 25.66C12.2284 25.684 12.094 25.6632 11.9773 25.6007C11.8606 25.5383 11.7687 25.4381 11.7164 25.3165C11.6642 25.195 11.6549 25.0592 11.69 24.9317L13.93 17.9083C13.9961 17.7316 14.0182 17.5414 13.9946 17.3542C13.9711 17.1669 13.9024 16.9882 13.7946 16.8333C13.6867 16.6785 13.5429 16.5521 13.3755 16.465C13.2081 16.3779 13.022 16.3327 12.8333 16.3333H4.66667Z" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.33333" />
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Instant Alerts</h3>
+                    <p class="feature-description">
+                        Get immediate notifications about traffic conditions, speed limits, and road changes in real-time.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Immersive AR Navigation Section -->
+    <section id="carscreen" class="ar-navigation-section">
+        <div class="container">
+            <div class="two-column-layout">
+                <!-- Content -->
+                <div class="content-column">
+                    <div class="badge">
+                        <svg class="badge-icon" fill="none" viewBox="0 0 16 16">
+                            <path d="M2 4.66667V3.33333C2 2.97971 2.14048 2.64057 2.39052 2.39052C2.64057 2.14048 2.97971 2 3.33333 2H4.66667" stroke="#51A2FF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.33333" />
+                            <path d="M11.334 2H12.6673C13.0209 2 13.3601 2.14048 13.6101 2.39052C13.8602 2.64057 14.0007 2.97971 14.0007 3.33333V4.66667" stroke="#51A2FF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.33333" />
+                            <path d="M14.0007 11.3334V12.6667C14.0007 13.0203 13.8602 13.3595 13.6101 13.6095C13.3601 13.8596 13.0209 14 12.6673 14H11.334" stroke="#51A2FF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.33333" />
+                            <path d="M4.66667 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V11.3333" stroke="#51A2FF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.33333" />
+                        </svg>
+                        <span class="badge-text">Real-Time Processing</span>
+                    </div>
+
+                    <h3 class="content-title">Immersive AR Navigation</h3>
+                    <p class="content-description">
+                        Our advanced augmented reality system projects navigation instructions directly onto your view of the road. Never miss a turn with intuitive visual guidance that adapts to your driving conditions in real-time.
+                    </p>
+
+                    <ul class="feature-list">
+                        <li class="feature-list-item">
+                            <div class="bullet-point"></div>
+                            <span>Turn-by-turn AR directions</span>
+                        </li>
+                        <li class="feature-list-item">
+                            <div class="bullet-point"></div>
+                            <span>3D landmark recognition</span>
+                        </li>
+                        <li class="feature-list-item">
+                            <div class="bullet-point"></div>
+                            <span>Dynamic route optimization</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Image -->
+                <div class="image-column">
+                    <div class="image-wrapper">
+                        <img src="ImageWithFallback.svg" alt="AR Navigation View" class="content-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Intelligent Safety Systems Section -->
+    <section id="application" class="safety-section">
+        <div class="container">
+            <div class="two-column-layout">
+                <!-- Image -->
+                <div class="image-column">
+                    <div class="image-wrapper">
+                        <img src="ImageWithFallback2.svg" alt="Safety Features" class="content-image">
+                    </div>
+                </div>
+
+                <!-- Content -->
+                <div class="content-column">
+                    <div class="badge">
+                        <svg class="badge-icon" fill="none" viewBox="0 0 16 16">
+                            <path d="M2 4.66667V3.33333C2 2.97971 2.14048 2.64057 2.39052 2.39052C2.64057 2.14048 2.97971 2 3.33333 2H4.66667" stroke="#51A2FF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.33333" />
+                            <path d="M11.334 2H12.6673C13.0209 2 13.3601 2.14048 13.6101 2.39052C13.8602 2.64057 14.0007 2.97971 14.0007 3.33333V4.66667" stroke="#51A2FF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.33333" />
+                            <path d="M14.0007 11.3334V12.6667C14.0007 13.0203 13.8602 13.3595 13.6101 13.6095C13.3601 13.8596 13.0209 14 12.6673 14H11.334" stroke="#51A2FF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.33333" />
+                            <path d="M4.66667 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V11.3333" stroke="#51A2FF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.33333" />
+                        </svg>
+                        <span class="badge-text">AI-Powered Safety</span>
+                    </div>
+
+                    <h3 class="content-title">Intelligent Safety Systems</h3>
+                    <p class="content-description">
+                        Our vision, recognizing potential hazards and providing real-time warnings. Stay one step ahead with predictive safety technology that helps prevent accidents before they happen.
+                    </p>
+
+                    <ul class="feature-list">
+                        <li class="feature-list-item">
+                            <div class="bullet-point"></div>
+                            <span>Collision warning system</span>
+                        </li>
+                        <li class="feature-list-item">
+                            <div class="bullet-point"></div>
+                            <span>Blind spot monitoring</span>
+                        </li>
+                        <li class="feature-list-item">
+                            <div class="bullet-point"></div>
+                            <span>Pedestrian detection</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Transform Your Drive?</h2>
+                <p class="cta-description">
+                    Experience the future of automotive technology. AR-powered system transforms your driving experience.
+                </p>
+                
+                <div class="cta-buttons">
+                    <button class="btn-primary">Get Started</button>
+                    <button class="btn-secondary">Watch Demo</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">50M+</div>
+                    <div class="stat-label">Active Users</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">99.9%</div>
+                    <div class="stat-label">Accuracy Rate</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">4.9/5</div>
+                    <div class="stat-label">User Rating</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="faq" class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Logo & Description -->
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <div class="logo-svg">
+                            <svg fill="none" preserveAspectRatio="xMidYMid meet" viewBox="0 0 76 42.0455">
+                                <path d="M18.5907 15.3575C19.3642 14.0433 23.6038 13.4928 23.6038 13.4928C28.0508 5.2487 35.4509 4.34738 37.9974 4.29341C40.5438 4.35008 47.9466 5.2487 52.3909 13.4928C52.3909 13.4928 56.6305 14.046 57.404 15.3575C58.1616 16.6447 54.9772 1.07673 38.1568 0.0215895V1.03191e-06C38.1037 0.00269959 38.0505 0.00809671 37.9974 0.0107953C37.9442 0.00809671 37.891 0.00269959 37.8379 1.03191e-06V0.0215895C21.0175 1.07673 17.8358 16.6447 18.5907 15.3575Z" fill="#A8ABB2" />
+                                <path d="M76 14.3078C73.3207 15.398 68.1347 15.5599 68.1347 15.5599C71.1596 14.5021 70.8858 12.9423 70.8858 12.9423C70.8858 12.9423 63.9801 15.3575 63.7462 14.7233C63.515 14.0892 65.8833 13.2445 65.8833 13.2445C65.1258 12.6643 63.9908 12.6023 63.1003 12.7831C60.6921 13.2715 59.3923 15.6112 56.8538 15.8621C55.7029 15.9755 54.7725 15.595 53.6774 15.3656C53.5099 15.3305 53.3451 15.3116 53.1803 15.3008C51.9762 15.1632 50.7189 15.3413 49.4829 15.595C46.3942 16.2264 39.4354 21.5129 38.0744 26.3865C37.1733 21.2943 29.5606 16.7257 26.5144 15.595C24.9515 15.0148 23.237 14.9716 21.6847 15.5167C20.8474 15.7299 20.0659 15.9539 19.1462 15.8621C16.6077 15.6112 15.3053 13.2715 12.8997 12.7831C12.0092 12.6023 10.8742 12.667 10.1167 13.2445C10.1167 13.2445 12.485 14.0892 12.2538 14.7233C12.0225 15.3575 5.11416 12.9423 5.11416 12.9423C5.11416 12.9423 4.84037 14.4994 7.86528 15.5599C7.86528 15.5599 2.67935 15.3953 0 14.3078C0 14.3078 0.523643 18.5742 13.1628 20.8464C13.1628 20.8464 11.6451 21.1567 9.95985 21.0056C9.95985 21.0056 13.0698 23.7446 18.0511 22.4142C18.6119 27.3499 20.2307 32.148 23.6968 35.8018C26.2592 38.5031 29.5951 40.33 33.1463 41.288C34.6694 41.6982 36.3998 42.1056 37.9973 42.0382C39.5949 42.1056 41.3253 41.6982 42.8483 41.288C46.4022 40.3273 49.7354 38.5004 52.2978 35.8018C55.764 32.148 57.3828 27.3499 57.9436 22.4142C62.9249 23.7446 66.0348 21.0056 66.0348 21.0056C64.3496 21.1567 62.8318 20.8464 62.8318 20.8464C75.4737 18.5742 76 14.3078 76 14.3078ZM38.1409 37.8041C38.1409 37.8041 38.1143 37.8041 38.0691 37.8041C38.0665 37.8041 38.0611 37.8041 38.0585 37.8041C38.0425 37.8041 38.0213 37.8041 38 37.8041C37.9787 37.8041 37.9575 37.8041 37.9415 37.8041C37.9389 37.8041 37.9335 37.8041 37.9282 37.8041C37.883 37.8041 37.8565 37.8041 37.8565 37.8041C24.6032 37.2239 22.3253 26.0816 21.9345 22.193C21.8628 21.4913 22.4449 20.8869 23.136 20.957C26.23 21.2593 29.1087 22.2199 31.6233 24.1656C33.2819 25.4474 34.284 27.3391 34.7545 29.3711C35.2276 31.4139 34.6375 33.7968 35.5865 35.7235C35.9931 36.5493 36.9102 36.9136 37.8379 36.973V36.9838C37.891 36.9838 37.9442 36.9811 37.9973 36.9784C38.0505 36.9784 38.1037 36.9838 38.1568 36.9838V36.9703C39.0818 36.9109 40.0015 36.5466 40.4082 35.7208C41.3572 33.7968 40.7671 31.4112 41.2402 29.3684C41.7107 27.3364 42.7128 25.442 44.3714 24.1629C46.8886 22.2199 49.7647 21.2593 52.8587 20.9543C53.5525 20.8869 54.1319 21.4886 54.0602 22.1903C53.6721 26.0816 51.3941 37.2212 38.1409 37.8041Z" fill="#A8ABB2" />
+                            </svg>
+                        </div>
+                        <span class="logo-text">OTOVISION</span>
+                    </div>
+                    <p class="footer-description">
+                        Transforming the future of driving with augmented reality technology.
+                    </p>
+                </div>
+
+                <!-- Product Links -->
+                <div class="footer-column">
+                    <h4 class="footer-heading">Product</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Features</a></li>
+                        <li><a href="#" class="footer-link">Pricing</a></li>
+                        <li><a href="#" class="footer-link">Downloads</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company Links -->
+                <div class="footer-column">
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">About</a></li>
+                        <li><a href="#" class="footer-link">Careers</a></li>
+                        <li><a href="#" class="footer-link">Press</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal Links -->
+                <div class="footer-column">
+                    <h4 class="footer-heading">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Privacy</a></li>
+                        <li><a href="#" class="footer-link">Terms</a></li>
+                        <li><a href="#" class="footer-link">License</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2025 OTOVISION. All rights reserved.</p>
+                
+                <div class="social-links">
+                    <a href="#" class="social-link">
+                        <svg fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link">
+                        <svg fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link">
+                        <svg fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121L7.773 13.98l-2.94-.918c-.64-.203-.654-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.95z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
